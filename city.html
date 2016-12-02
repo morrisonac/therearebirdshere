@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    h2 {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 40px;
+    }
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+     -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+    a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+a:hover, a:active {
+    background-color: red;
+}
+    #left {
+      width: 50%;
+      float: left;
+    }
+    #right {
+      margin-left: 50%;
+    }
+    .clear {
+      clear: both;
+    }
+    #topb, #bottomb, #leftb, #rightb {
+	background: #a5ebff;
+	position: fixed;
+	}
+	#leftb, #rightb {
+		top: 0; bottom: 0;
+		width: 15px;
+		}
+		#leftb { left: 0; }
+		#rightb { right: 0; }
+		
+	#topb, #bottomb {
+		left: 0; right: 0;
+		height: 15px;
+		}
+		#topb { top: 0; }
+		#bottomb { bottom: 0; }
+    img {
+    max-width: 75%;
+    height: auto;
+    width: auto;
+    display: block;
+    }
+    .left {
+    position: absolute;
+    left: 15px;
+    bottom: 0px;
+    width: 400px;
+    border: none;
+    padding: 10px;
+    padding-bottom: 20px;
+    float: left;
+    transform: translate(0, 100%);
+    }
+    .right {
+     position: absolute;
+        right: 15px;
+        bottom: 50px;
+        border: none;
+        padding: 10px;
+        padding-bottom: 20px;
+        float: right;
+        transform: translate(0, 75%);
+    }
+    #elementId {
+        background-color: white;
+    }
+    audio { 
+   display:none;
+}
+</style>
+</head>
+<body>
+
+<h2>Are There Birds Here?</h2>
+ <div id="leftb"></div>
+<div id="rightb"></div>
+<div id="topb"></div>
+<div id="bottomb"></div>
+   <table class="nav" align="center">
+    <tr>
+      <td>
+        <div class="nav_button">
+            <button id="myBtn">Find Out!</button>
+        </div>
+      </td>
+    </tr>
+  </table> 
+
+<div id="myModal" class="modal">
+
+  <div class="modal-content">
+    <span class="close">×</span>
+      <p><a href="http://www.aqicn.org/map/world/" target="_blank">Click to check for birds in your local area!</a> <img src="../Media/buildingicon.png" alt="building" style="float:right;width:40px;margin-right:40px;margin-bottom:50px;"></p>
+  </div>
+
+</div>
+
+<script>
+var modal = document.getElementById('myModal');
+
+var btn = document.getElementById("myBtn");
+
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+</script>
+    
+    <div id="elementId">
+        <a href="../Pages/Morrison_Amanda_L1_V2.html">
+    <img src="../Media/birdsmissing.png" alt="no birds";>
+        </a>  
+    </div>
+   
+    
+    
+    <div class="left">
+<img src="../Media/city%20scape.gif" alt="citygif";>
+    </div>
+    <div class="right">
+        <a href="homepage.html">
+    <img src="../Media/cityscape.jpg" alt="cityjpg";>
+        </a>
+    </div>
+    
+    
+<audio controls autoplay loop>
+  <source src="../Media/citycrows.wav" type="audio/wav">
+</audio>
+</body>
+</html>

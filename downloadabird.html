@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body{
+        margin-top: 100px;
+    }
+    h2{
+        text-align: center;
+        margin-top: 1px
+    }
+    
+img {
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+    max-width: 50%;
+
+}
+.button1 {
+  background-color: #004A7F;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #FFFFFF;
+  cursor: auto;
+  display: block;
+  margin: 0 auto;
+  font-size: 20px;
+  padding: 5px 20px;
+    margin-bottom:30px;
+    margin-top: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+@-webkit-keyframes glowing {
+  0% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; -webkit-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+}
+
+@-moz-keyframes glowing {
+  0% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; -moz-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+}
+
+@-o-keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+
+@keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+
+.button1 {
+  -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
+}
+  #left {
+      width: 50%;
+      float: left;
+    }
+    #right {
+      margin-left: 50%;
+    }
+    .clear {
+      clear: both;
+    }
+    #topb, #bottomb, #leftb, #rightb {
+	background: #a5ebff;
+	position: fixed;
+	}
+	#leftb, #rightb {
+		top: 0; bottom: 0;
+		width: 15px;
+		}
+		#leftb { left: 0; }
+		#rightb { right: 0; }
+		
+	#topb, #bottomb {
+		left: 0; right: 0;
+		height: 15px;
+		}
+		#topb { top: 0; }
+		#bottomb { bottom: 0; }
+    #myImage {
+        width: 75px;
+    }
+    .button2 {
+    margin-left: 200px;
+    align-items: center;
+    border-color: black;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin-left: 50%;
+    margin-right: 50%;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: not-allowed;
+    } 
+    table{
+        margin-bottom: 40px;
+    }
+</style>
+          <script type="text/javascript">
+         <!--
+            var imgObj = null;
+            
+            function init(){
+               imgObj = document.getElementById('myImage');
+               imgObj.style.position= 'relative'; 
+               imgObj.style.left = '0px'; 
+            }
+            
+            function moveRight(){
+               imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
+            }
+            
+            window.onload =init;
+         //-->
+      </script>
+</head>
+<body>
+    <div id="leftb"></div>
+<div id="rightb"></div>
+<div id="topb"></div>
+<div id="bottomb"></div>
+    
+<div id="container">
+    <div id="left">
+      <h2>Download a Bird for Free!</h2>
+    <a href="../Pages/Morrison_Amanda_L3_V1.html">
+<img src="../Media/downloadabird.ico" alt="Download" width="200">
+    </a>
+    </div>
+    <div id="right">
+      <button type="submit" class="button button1">or go premium for only $5.99 a bird!</button>
+      <a href="../Pages/Morrison_Amanda_L4_V1.html">
+<img src="../Media/premium.jpg" alt="DownloadP" width="200">
+    </a></div>
+    </div>
+    <div class="clear"></div>
+    <br>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+         <form>
+         <img id="myImage" src="../media/movingcrane.jpg" />
+          <br>
+         <table class="nav" align="center">
+    <tr>
+      <td>
+        <div class="nav_button">
+             <input type="button" button class="button button2" value="I don't want to buy a bird" onclick="moveRight();" />
+        </div>
+      </td>
+    </tr>
+  </table>
+      </form>
+    
+    <a href="homepage.html">
+<img border="0" alt="back" src="../Media/back.ico" width="50">
+</body>
+</html>
